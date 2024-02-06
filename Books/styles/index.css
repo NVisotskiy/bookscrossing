@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.banner {
+    background: linear-gradient(to bottom right, #0f0f0f, #504f4f);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    text-align: center;
+    color: white;
+}
+
+.banner-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.book-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.book-card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.book-card .info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.book-card .info p {
+    margin: 0;
+    font-size: 16px;
+}
+.book-card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.book-card .rating .stars {
+    display: flex;
+    margin-right: 10px;
+}
+.book-card .rating .stars i {
+    font-size: 24px;
+    color: #fdd835;
+}
+.book-card .rating .comments {
+    display: flex;
+    align-items: center;
+}
+.book-card .rating .comments p {
+    margin: 0;
+    font-size: 16
+}   
+
+.book-covers {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .book-cover {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .book-cover:hover {
+    transform: rotate(10deg) scale(1.2);
+    filter: brightness(1.2);
+    cursor: pointer;
+  }
+  
+  @media (max-width: 480px) {
+    .book-cover {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .user-page {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .user-page {
+      display: block;
+      width: 300px;
+      height: 100%;
+      background-color: #f2f2f2;
+      padding: 1rem;
+      box-sizing: border-box;
+      border-left: 1px solid #ddd;
+    }
+  }
+
+  .user-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+}
+
+.user-link:hover {
+    transform: scale(1.1); 
+}

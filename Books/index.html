@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Exchange</title>
+    <link rel="stylesheet" href="/Books/styles/index.css" />
+    <link rel="stylesheet" href="/Books/styles/userPage.css">
+  </head>
+  <body>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Book Exchange</h1>
+            <!-- Добавляем ссылку на страницу пользователя -->
+            <a href="/Books/pages/userPage.html" class="user-link">User Page</a>
+        </div>
+    </div>
+    <div class="container">
+      <div class="add-book-form">
+        <form id="add-book-form">
+          <input
+            type="text"
+            id="book-title"
+            placeholder="Book title"
+            required
+          />
+          <input type="text" id="book-author" placeholder="Author" required />
+          <input type="text" id="book-genre" placeholder="Genre" required />
+          <input type="file" id="book-cover" accept="image/*" required />
+          <textarea
+            id="book-description"
+            placeholder="Description"
+            required
+          ></textarea>
+          <input type="submit" value="Add Book" />
+        </form>
+      </div>
+      <div class="book-card">
+        <div class="book-covers">
+          <img
+            class="book-cover"
+            id="book-cover-preview-1"
+            src="/Books/Img/Faust.png"
+            alt="Book cover 1"
+          />
+          <img
+            class="book-cover"
+            id="book-cover-preview-2"
+            src="/Books/Img/Faust.png"
+            alt="Book cover 2"
+          />
+          <img
+            class="book-cover"
+            id="book-cover-preview-3"
+            src="/Books/Img/Faust.png"
+            alt="Book cover 3"
+          />
+        </div>
+        <div class="info">
+          <h2 id="book-title-preview"></h2>
+          <p id="book-author-preview"></p>
+          <p id="book-genre-preview"></p>
+        </div>
+        <div class="rating">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="comments">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              consequuntur tempora laboriosam minus repellat fugiat, maiores
+              dolorem quisquam inventore ut ad harum soluta repellendus et ab
+              vitae. Reprehenderit molestias, laudantium obcaecati dolore
+              delectus accusantium. Quod deserunt vel natus similique
+              repudiandae mollitia ratione at. Eaque, accusamus. Enim
+              praesentium nobis molestiae, tenetur alias reiciendis corporis
+              nam, perferendis quibusdam similique expedita facere quidem
+              consequatur, esse suscipit eveniet obcaecati incidunt rerum fugiat
+              voluptas vitae ullam laboriosam maxime! Itaque nulla voluptas, vel
+              pariatur ratione tenetur maxime nihil facilis, sint ea velit animi
+              exercitationem provident perspiciatis quam minima consequuntur
+              ullam repellat harum impedit quae a. Maiores unde voluptates,
+              sapiente officiis totam quibusdam. Nostrum repellendus deleniti
+              libero quidem repudiandae, aliquid illo, architecto accusantium
+              vel iure odit ullam aperiam voluptatibus excepturi facere
+              obcaecati dolorem. Ullam, assumenda veritatis laborum porro autem
+              possimus distinctio consectetur. Enim officia consectetur rerum
+              expedita, alias amet sint omnis harum ipsum unde dolorum
+              consequatur provident quaerat nihil laudantium magnam delectus ut
+              facere porro neque recusandae illum esse. Quibusdam perspiciatis
+              libero provident esse ipsa praesentium consequatur labore ut cum
+              dolore, numquam suscipit, blanditiis laudantium repellendus enim
+              unde. Sequi, totam sunt tenetur adipisci quod, repellendus quam
+              porro suscipit molestias qui fugiat, optio praesentium ipsa
+              recusandae commodi consequuntur.
+            </p>
+            <p id="book-comments-preview"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
